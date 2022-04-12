@@ -39,18 +39,18 @@ while (h2 <= 2)
 			while (m1 <= 9)
 			{
 				_putchar('0' + h2);
-			       	_putchar('0' + h1);
+				_putchar('0' + h1);
 				_putchar(':');
-			       	_putchar('0' + m2);
+				_putchar('0' + m2);
 				_putchar('0' + m1);
-			       	_putchar('\n');
-			
+				_putchar('\n');
+				
 				m1++;
 			}
 			m2++;
-		}	
-		h1++;												}	
-	  h2++;
-
+		}
+		h1++;
+	}
+	h2++;
 }
 }
