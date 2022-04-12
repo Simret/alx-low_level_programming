@@ -34,13 +34,20 @@ while (h2 <= 2)
 
 		while (m2 <= 5)
 		{
-																m1 = 0;
-																while (m1 <= 9)
-																{
-																	_putchar('0' + h2);										    _putchar('0' + h1);											_putchar(':');											    _putchar('0' + m2);											_putchar('0' + m1);
-			    _putchar('\n');											m1++;
-																}
-			  m2++;
+			m1 = 0;
+			
+			while (m1 <= 9)
+			{
+				_putchar('0' + h2);
+			       	_putchar('0' + h1);
+				_putchar(':');
+			       	_putchar('0' + m2);
+				_putchar('0' + m1);
+			       	_putchar('\n');
+			
+				m1++;
+			}
+			m2++;
 		}	
 		h1++;												}	
 	  h2++;
