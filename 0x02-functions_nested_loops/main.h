@@ -33,7 +33,3 @@ void print_times_table(int n);
 
 #endif
 
-© 2022 GitHub, Inc.
-
-Terms
-
