@@ -8,7 +8,6 @@
 void print_most_numbers(void)
 
 {
-
 	char n = 0;
 	
 	while (n <= 9)
@@ -20,5 +19,4 @@ void print_most_numbers(void)
 		n++;
 	}
 	_putchar('\n');
-
 }
