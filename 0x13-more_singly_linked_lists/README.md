@@ -1,1 +1,1 @@
-More linked list exercise
+Singly linked list
