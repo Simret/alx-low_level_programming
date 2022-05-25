@@ -19,16 +19,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	if (idx != 0)
 	{
-		tmp = *head;
-		for (; i < idx - 1 && tmp != NULL; i++)
-			tmp = tmp->next;
-		if (tmp == NULL)
-			return (NULL);
+	tmp = *head;
+	for (; i < idx - 1 && tmp != NULL; i++)
+		tmp = tmp->next;
+	if (tmp == NULL)
+		return (NULL);
 	}
-	new_node = malloc(sizeof(listint_t));
+	insert_node = malloc(sizeof(listint_t));
 	if (insert_node == NULL)
 		return (NULL);
-	new_node->n = n;
+	insert_node->n = n;
 	if (idx == 0)
 	{
 		insert_node->next = *head;
