@@ -9,15 +9,15 @@
 size_t print_listint_safe(const listint_t *head)
 
 {
-	size_t num = 0;
-	long int diff;
+	size_t x = 0;
+	long int dif;
 
 	while (head)
 	{
-		diff = head - head->next;
-		num++;
+		dif = head - head->next;
+		x++;
 		printf("[%p] %d\n", (void *)head, head->n);
-		if (diff > 0)
+		if (dif > 0)
 			head = head->next;
 		else
 		{
@@ -25,5 +25,5 @@ size_t print_listint_safe(const listint_t *head)
 			break;
 		}
 	}
-	return (num);
+	return (x);
 }
