@@ -2,24 +2,29 @@
 
 /**
  * binary_to_uint - Converts a binary number to an unsigned int.
- * @p: Pointer to a string of 0 and 1 chars.
- * Return: Integer.
+ * @b: Pointer to a string of 0 and 1 chars.
+ * Return: unsigned integer.
  **/
 
 unsigned int binary_to_uint(const char *b)
 
 {
-	unsigned int decimal = 0, rem = 0, weight = 1;
+	int i;
+	unsigned dec;
 
-	if(b == NULL)
+	dec = 0;
+	if (!b)
 		return (0);
-
-	while (b != 0)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		rem = binary % 10;
-		decimal = decimal + rem*weight;
-		binary = binary / 10;
-		weight = weight*2;
-	}	
-	return (decimal);
-}	
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
+	}
+	for (i = 0; b[i] != '\0'; i++)
+	{
+		dec <<= 1;
+		if (b[i] == '1')
+			dec += 1;
+	}
+	return (dec);
+}
