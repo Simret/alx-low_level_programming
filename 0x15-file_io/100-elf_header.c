@@ -161,7 +161,6 @@ int main(int argc, char **argv)
 	check_data_ver(header);
 	check_type(header);
 	check_entry(header);
-
 											free(header);
 	close(fd64);
 	return (0);
