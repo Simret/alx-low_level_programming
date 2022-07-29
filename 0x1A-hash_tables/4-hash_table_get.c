@@ -20,7 +20,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (!list)
 		return (NULL);
-	
 	while (list)
 	{
 		if (!strcmp(list->key, key))
