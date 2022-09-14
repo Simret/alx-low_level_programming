@@ -15,7 +15,7 @@ oclean:
 	-$(RM) *.o
 
 fclean:
-	-$(RM) *~$(NAME) *.o
+	-$(RM) *~ $(NAME) *.o
 
 re: $(SRC)
 	-$(CC) $(CFLAGS) -c $^
